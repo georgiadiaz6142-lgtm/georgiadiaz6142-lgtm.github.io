@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>七七 · 个人网站</title>
+  <meta name="description" content="七七的个人网站 - 关于我、我的技能与作品" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- 导航栏 -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">七七<span>.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">首页</a>
+        <a href="#about">关于我</a>
+        <a href="#skills">技能</a>
+        <a href="#projects">作品</a>
+        <a href="#contact">联系</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 首页 / Hero -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <p class="hero-greeting">👋 你好，我是</p>
+      <h1 class="hero-title">七七</h1>
+      <p class="hero-subtitle">热爱创造 · 持续学习 · 用代码与设计记录世界</p>
+      <p class="hero-desc">
+        欢迎来到我的个人网站。这里记录了我的成长、作品与想法。
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">查看我的作品</a>
+        <a href="#contact" class="btn btn-outline">联系我</a>
+      </div>
+    </div>
+    <div class="scroll-hint">⌄</div>
+  </section>
+
+  <!-- 关于我 -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">关于我</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-emoji">🧑‍💻</div>
+          <p>
+            你好，我是七七。这里放一段关于你的自我介绍，例如你的职业、兴趣、
+            正在学习的方向，以及你希望通过这个网站传递什么。
+          </p>
+        </div>
+        <div class="about-card">
+          <div class="about-emoji">🌱</div>
+          <p>
+            这是第二段，可以写你的经历、目标，或是一句喜欢的话。把这里换成
+            你自己的故事，让访客更了解你。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 技能 -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">技能</h2>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <span class="skill-name">HTML / CSS</span>
+          <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">JavaScript</span>
+          <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Python</span>
+          <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">设计 / 创意</span>
+          <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品 -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">作品</h2>
+      <div class="projects-grid">
+        <a class="project-card" href="#" target="_blank" rel="noopener">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#6c63ff,#a78bfa)">项目一</div>
+          <h3>项目名称一</h3>
+          <p>一句话介绍这个项目做了什么、解决了什么问题。</p>
+        </a>
+        <a class="project-card" href="#" target="_blank" rel="noopener">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#ec4899,#f472b6)">项目二</div>
+          <h3>项目名称二</h3>
+          <p>一句话介绍这个项目做了什么、解决了什么问题。</p>
+        </a>
+        <a class="project-card" href="#" target="_blank" rel="noopener">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#10b981,#34d399)">项目三</div>
+          <h3>项目名称三</h3>
+          <p>一句话介绍这个项目做了什么、解决了什么问题。</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title">联系我</h2>
+      <p class="contact-intro">有想法想交流？欢迎通过以下方式找到我 👇</p>
+      <div class="contact-links">
+        <a class="contact-item" href="https://github.com/georgiadiaz6142-lgtm" target="_blank" rel="noopener">
+          <span class="contact-icon">🐙</span> GitHub
+        </a>
+        <a class="contact-item" href="mailto:your@email.com">
+          <span class="contact-icon">✉️</span> 邮箱
+        </a>
+        <a class="contact-item" href="#" target="_blank" rel="noopener">
+          <span class="contact-icon">💬</span> 其他社交
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> 七七 · 用 ❤️ 制作</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
